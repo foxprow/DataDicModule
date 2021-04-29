@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>ENet.DataDic</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Ddd.Domain" Version="4.2.2" />
+		<ProjectReference Include="..\ENet.DataDic.Domain.Shared\ENet.DataDic.Domain.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

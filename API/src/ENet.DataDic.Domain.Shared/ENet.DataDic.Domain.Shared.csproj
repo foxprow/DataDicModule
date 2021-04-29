@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>ENet.DataDic</RootNamespace>
+		<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Validation" Version="4.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Localization\DataDic\*.json" />
+		<Content Remove="Localization\DataDic\*.json" />
+	</ItemGroup>
+
+</Project>
